@@ -10,14 +10,15 @@ document.querySelector("#searchBtn").addEventListener("click", () => {
   baseQuery = document.querySelector("#baseDropdown").value;
   searchQuery = document.querySelector("#searchDropdown").value;
 
-  if (searchQuery.length != 0) {
+  if (searchQuery.length != 0 && searchQuery != baseQuery) {
     let currencyData = data[searchQuery];
+    let baseData= data[baseQuery]
     var curSize = Object.keys(currencyData).length;
     for(var i=0;i<curSize;i++){
-      if(currencyData[i] != null){
+      if(currencyData[i] != null && baseData[i] != null){
         var obj = {
           x : new Date(dDate[i]),
-          y : currencyData[i]
+          y : currencyData[i]/baseData[i]
         }
         smallData.push(obj);
       }
