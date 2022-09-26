@@ -23,11 +23,8 @@
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
-  <a href="">
-    <img src="https://freepngimg.com/download/graphic_design/40023-6-graph-image-free-png-hq.png" alt="Logo" width="160" height="80">
-  </a>
 
-  <h3 align="center">OHLC Engine</h3>
+  <h3 align="center">Currency Exchange Visulizer</h3>
 
 
 
@@ -55,7 +52,7 @@
 
 
 Dashboard based on which User would be able to analyze the sentiment of the specific
-stock  through "OHLC" (Open/High/Low/Close) time series or Candlestick chart based on the 'Stock List' dataset. 
+stock  through "OHLC" (Open/High/Low/Close) time series or Candlestick chart based on the 'Stock List' dataset.
 
 ### Some ScreenShots
 ![Product Name Screen Shot][product-screenshot1]
@@ -81,26 +78,6 @@ Simply download to use the application.
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-Open index.html in any browser, and search for any company using Symbol in the given input location. After we can also change the chart to show continous, weekly or monthly data and also switch the chart between OHLC or candlestick. 
+Open index.html in any browser, and search for any company using Symbol in the given input location. After we can also change the chart to show continous, weekly or monthly data and also switch the chart between OHLC or candlestick.
 
 
-
-
-<!-- CONTACT -->
-## Contact
-
-Divya Patel - [@dd-712](https://github.com/dd-712) - divya807950@gmail.com
-
-Tulsi Patel - [@Tulsi2091](https://github.com/Tulsi2091) - tulsirpatel2001@gmail.com
-
-Parth Patel - [@parth0106](https://github.com/parth0106) - patelparth0106@gmail.com
-
-Dhruv Sonani - dhruvsonani1008@gmail.com
-
-Maheevatsa Rai - raimaheevatsa@gmail.com
-
-Khushi Jain - jainkhushi2403@gmail.com
-
-[t-s]: https://img.shields.io/badge/HTML-CSS%2C%20JavaScript-blue
-[product-screenshot1]: images/image1.png
-[product-screenshot2]: images/image2.png
