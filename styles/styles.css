@@ -1,0 +1,24 @@
+
+
+.search {
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    width: 60%;
+}
+
+#chartContainer {
+    margin: auto;
+    width: 90;
+}
+
+#desc {
+    margin-top: 450px;
+}
+
+#error {
+    margin-top: -250px;
+    text-align: center;
+    font-size: 100px;
+}
+
