@@ -13,8 +13,9 @@
 <body>
 
     <div class="input-group search">
-            <!-- <select id="myselect">
-                <option disabled selected>Select currency</option>
+        <div class="col-md-5">
+            <select class="form-control" id="baseDropdown">
+                <option value="USD" selected>USD</option>
                 <option value="INR">Algerian dinar (DZD)
                 <option value="AUD">Australian dollar (AUD)</option>
                 <option value="BHD">Bahrain dinar (BHD)</option>
@@ -65,20 +66,77 @@
                 <option value="AED">U.A.E. dirham   (AED)</option>
                 <option value="GBP">U.K. pound   (GBP)</option>)
                 <option value="UYU">Uruguayan peso   (UYU)</option>
-            </select>  -->
+            </select>
 
-            <input class="form-control" type="text" name="newItem" id="searchQuery" placeholder="Search" autocomplete="off">
-            <button class="btn btn-outline-secondary" id="searchBtn" name="cmpName" value="">Search</button>
+
+        </div>
+        <div class="col-md-5">
+            <select class="form-control" id="searchDropdown">
+                <option disabled selected>Select Currency</option>
+                <option value="INR">Algerian dinar (DZD)
+                <option value="AUD">Australian dollar (AUD)</option>
+                <option value="BHD">Bahrain dinar (BHD)</option>
+                <option value="VEF">Bolivar Fuerte (VEF)</option>
+                <option value="BWP">Botswana pula (BWP)</option>
+                <option value="BRL">Brazilian real (BRL)</option>
+                <option value="BND">Brunei dollar (BND)</option>
+                <option value="CAD">Canadian dollar (CAD)</option>
+                <option value="CLP">Chilean peso (CLP)</option>
+                <option value="CNY">Chinese yuan (CNY)</option>
+                <option value="COP">Colombian peso (COP)</option>
+                <option value="CZK">Czech koruna (CZK)</option>
+                <option value="DKK">Danish krone (DKK)</option>
+                <option value="EUR">Euro (EUR)</option>
+                <option value="HUF">Hungarian forint   (HUF)</option>
+                <option value="ISK">Icelandic krona   (ISK)</option>
+                <option value="INR">Indian rupee   (INR)</option>
+                <option value="IDR">Indonesian rupiah   (IDR)</option>
+                <option value="IRR">Iranian rial   (IRR)</option>
+                <option value="ILS">Israeli New Shekel   (ILS)</option>
+                <option value="JPY">Japanese yen   (JPY)</option>
+                <option value="KZT">Kazakhstani tenge   (KZT)</option>
+                <option value="KRW">Korean won   (KRW)</option>
+                <option value="KWD">Kuwaiti dinar   (KWD)</option>
+                <option value="LYD">Libyan dinar   (LYD)</option>
+                <option value="MYR">Malaysian ringgit   (MYR)</option>
+                <option value="MUR">Mauritian rupee   (MUR)</option>
+                <option value="MXR">Mexican peso   (MXN)</option>
+                <option value="NPR">Nepalese rupee   (NPR)</option>
+                <option value="NZD">New Zealand dollar   (NZD)</option>
+                <option value="NOK">Norwegian krone   (NOK)</option>
+                <option value="OMR">Omani rial   (OMR)</option>
+                <option value="PKR">Pakistani rupee   (PKR)</option>
+                <option value="PEN">Peruvian sol   (PEN)</option>
+                <option value="PHP">Philippine peso   (PHP)</option>
+                <option value="PLN">Polish zloty   (PLN)</option>
+                <option value="QAR">Qatari riyal   (QAR)</option>
+                <option value="RUB">Russian ruble   (RUB)</option>
+                <option value="SAR">Saudi Arabian riyal   (SAR)</option>
+                <option value="SGD">Singapore dollar   (SGD)</option>
+                <option value="ZAR">South African rand   (ZAR)</option>
+                <option value="LKR">Sri Lankan rupee   (LKR)</option>
+                <option value="SEK">Swedish krona   (SEK)</option>
+                <option value="CHF">Swiss franc   (CHF)</option>
+                <option value="THB">Thai baht   (THB)</option>
+                <option value="TTD">Trinidadian dollar   (TTD)</option>
+                <option value="TND">Tunisian dinar   (TND)</option>
+                <option value="AED">U.A.E. dirham   (AED)</option>
+                <option value="GBP">U.K. pound   (GBP)</option>)
+                <option value="UYU">Uruguayan peso   (UYU)</option>
+            </select>
+        </div>
+
+        <button class="btn btn-outline-secondary" id="searchBtn" name="cmpName" value="">Search</button>
         </div>
     </div>
     <div class="search">
-        <button class="btn btn-outline-secondary" value="weekly">Weekly</button>
-        <button class="btn btn-outline-secondary" value="monthly">Monthly</button>
-        <button class="btn btn-outline-secondary" value="quaterly">Quaterly</button>
-        <button class="btn btn-outline-secondary" value="yearly">yearly</button>
+        <button class="btn btn-outline-secondary mr-3" value="weekly">Weekly</button>
+        <button class="btn btn-outline-secondary mx-3" value="monthly">Monthly</button>
+        <button class="btn btn-outline-secondary mx-3" value="quaterly">Quaterly</button>
+        <button class="btn btn-outline-secondary mx-3" value="yearly">yearly</button>
         <div >
             <!-- <div class="row align-items-end"> -->
-                <div class="row mt-4">
+                <div class="row mt-4 mb-5">
                 <div class="col"><button class="btn btn-outline-secondary btn-year" value="12">2012</button></div>
                 <div class="col"><button class="btn btn-outline-secondary btn-year" value="13">2013</button></div>
                 <div class="col"><button class="btn btn-outline-secondary btn-year" value="14">2014</button></div>

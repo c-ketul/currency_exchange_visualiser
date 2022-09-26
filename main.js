@@ -7,7 +7,9 @@ let smallDataToUse =[]
 
 document.querySelector("#searchBtn").addEventListener("click", () => {
   smallData = []
-  searchQuery = document.querySelector("#searchQuery").value;
+  baseQuery = document.querySelector("#baseDropdown").value;
+  searchQuery = document.querySelector("#searchDropdown").value;
+
   if (searchQuery.length != 0) {
     let currencyData = data[searchQuery];
     var curSize = Object.keys(currencyData).length;
