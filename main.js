@@ -23,12 +23,13 @@ document.querySelector("#searchBtn").addEventListener("click", () => {
         smallData.push(obj);
       }
     }
-
+    lineChart();
   }
   else {
     document.querySelector("#chartContainer").innerHTML = "";
     document.querySelector("#error").innerHTML = "Error 404";
   }
+
 });
 
 document.querySelectorAll(".btn").forEach((button)=>{
