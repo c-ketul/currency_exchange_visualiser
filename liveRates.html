@@ -10,8 +10,21 @@
     <div class="search">
         <button class="btn btn-outline-secondary" value="fetch" onclick="getResults()">Fetch</button>
     </div>
-    <h2>
-      <span class="value" id="vedant"> </span>
-        </h2>
+    <h2><span class="value" id="liveRates"> </span></h2>
+
+    <script>
+        const api = "https://api.exchangerate-api.com/v4/latest/USD";
+        var query="";
+        function getResults() {
+            fetch(`${api}`).then(currency => {
+                    return currency.json();
+                }).then(displayResults);
+        }
+        function displayResults(currency) {
+
+            var value=currency.rates[query];
+            document.getElementById('liveRates').innerText = value;
+        }
+    </script>
 </body>
 </html>
