@@ -12,24 +12,40 @@
 
 <body>
 
-
     <div class="container">
+        <div class="row mb-4">
+            <div class="col-md-10">
+                <select class="form-control" id="selectDropdown">
+                    <option disabled selected>Select currency</option>
+                    <option value="INR">Algerian dinar (DZD)
+                    <option value="AUD">Australian dollar (AUD)</option>
+                    <option value="BHD">Bahrain dinar (BHD)</option>
+                    <option value="VEF">Bolivar Fuerte (VEF)</option>
+                </select>
+            </div>
+            <div class="col-md-2">
+                <button class="btn btn-outline-secondary" id="searchBtn" name="cmpName" value="">Search</button>
+            </div>
+        </div>
         <div class="row">
-            <div class="col"><button class="btn btn-outline-secondary" id="btn2012">2012</button></div>
-            <div class="col"><button class="btn btn-outline-secondary" id="btn2013">2013</button></div>
-            <div class="col"><button class="btn btn-outline-secondary" id="btn2014">2014</button></div>
-            <div class="col"><button class="btn btn-outline-secondary" id="btn2015">2015</button></div>
-            <div class="col"><button class="btn btn-outline-secondary" id="btn2016">2016</button></div>
-            <div class="col"><button class="btn btn-outline-secondary" id="btn2017">2017</button></div>
-            <div class="col"><button class="btn btn-outline-secondary" id="btn2018">2018</button></div>
-            <div class="col"><button class="btn btn-outline-secondary" id="btn2019">2019</button></div>
-            <div class="col"><button class="btn btn-outline-secondary" id="btn2020">2020</button></div>
-            <div class="col"><button class="btn btn-outline-secondary" id="btn2021">2021</button></div>
-            <div class="col"><button class="btn btn-outline-secondary" id="btn2022">2022</button></div>
+            <div class="col"><button class="btn btn-outline-secondary btn-year" id="btn2012">2012</button></div>
+            <div class="col"><button class="btn btn-outline-secondary btn-year" id="btn2013">2013</button></div>
+            <div class="col"><button class="btn btn-outline-secondary btn-year" id="btn2014">2014</button></div>
+            <div class="col"><button class="btn btn-outline-secondary btn-year" id="btn2015">2015</button></div>
+            <div class="col"><button class="btn btn-outline-secondary btn-year" id="btn2016">2016</button></div>
+            <div class="col"><button class="btn btn-outline-secondary btn-year" id="btn2017">2017</button></div>
+            <div class="col"><button class="btn btn-outline-secondary btn-year" id="btn2018">2018</button></div>
+            <div class="col"><button class="btn btn-outline-secondary btn-year" id="btn2019">2019</button></div>
+            <div class="col"><button class="btn btn-outline-secondary btn-year" id="btn2020">2020</button></div>
+            <div class="col"><button class="btn btn-outline-secondary btn-year" id="btn2021">2021</button></div>
+            <div class="col"><button class="btn btn-outline-secondary btn-year" id="btn2022">2022</button></div>
         </div>
     </div>
 
-    <script src="main.js"></script>
+
+    <div id="YearChartContainer"></div>
+
+    <script src="test.js"></script>
     <script type="text/javascript" src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>
 </body>
