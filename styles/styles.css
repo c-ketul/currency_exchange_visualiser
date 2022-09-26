@@ -22,3 +22,8 @@
     font-size: 100px;
 }
 
+.btn:focus {
+    outline: none;
+    box-shadow: none;
+}
+

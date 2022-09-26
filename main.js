@@ -1,11 +1,25 @@
 let period = 5
 let searchQuery = ""
+let smallData = [];
+const dDate = data.Date;
 
 document.querySelector("#searchBtn").addEventListener("click", () => {
-  searchQuery = document.querySelector("#searchQuery").value;
-  console.log(searchQuery)
+  smallData = []
+  searchQuery = document.querySelector("#selectDropdown").value;
+  console.log(searchQuery);
   if (searchQuery.length != 0) {
-    lineChart();
+    let currencyData = data[searchQuery];
+    var curSize = Object.keys(currencyData).length;
+    console.log("Vaibhav size",curSize);
+    for(var i=0;i<curSize;i++){
+      if(currencyData[i] != null){
+        var obj = {
+          x : new Date(dDate[i]),
+          y : currencyData[i]
+        }
+        smallData.push(obj);
+      }
+    }
   }
   else {
     document.querySelector("#chartContainer").innerHTML = "";
@@ -43,32 +57,30 @@ document.querySelectorAll(".btn").forEach((button)=>{
 });
 
 function getData(){
-    let obj = {
-        x: [],
-        y : []
-    };
+    let dataToUse = [];
 
-    var currencyData = data[searchQuery];
-    var dateData = data.Date;
-
-    for(let i=0; i<currencyData.length; i+=period){
-        if(currencyData[i] != null){
-            obj.x.push( currencyData[i] );
-            obj.y.push( dateData[i] );
-
-        }
+    console.log("small data is : ",smallData.length);
+    for(var i=0;i<smallData.length;i+=period){
+      const obj = {
+        x : smallData[i].x,
+        y : smallData[i].y
+      }
+      dataToUse.push(obj);
     }
-    return obj;
+    console.log();
+    console.log("getData()",dataToUse);
+    return dataToUse;
 }
 
 function lineChart() {
   let plotData = getData();
+
   console.log(plotData)
   let chart = new CanvasJS.Chart("chartContainer", {
     axisX: {
       interval: 1,
-      intervalType: "month",
-      valueFormatString: "MM YYYY"
+      intervalType: "year",
+      valueFormatString: "YYYY"
     },
     axisY: {
       prefix: "",
