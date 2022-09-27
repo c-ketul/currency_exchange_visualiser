@@ -9,10 +9,13 @@
 
 <br />
 <p align="center">
-
+  <a href="">
+  <img src="https://raw.githubusercontent.com/Vaibhav6200/NU-Team-6/master/images/logo.ico?token=GHSAT0AAAAAABXFXCJFUHFIEWNMQYSXS72UYZSY5SQ" alt="Logo" width="80" height="80">
+  </a>
   <h1 align="center">Currency Exchange Visulizer</h1>
+  
 
-
+<!-- ![Project Logo](https://raw.githubusercontent.com/Vaibhav6200/NU-Team-6/master/images/logo.ico?token=GHSAT0AAAAAABXFXCJFUHFIEWNMQYSXS72UYZSY5SQ) -->
 
 <!-- TABLE OF CONTENTS -->
 <details open="open">
@@ -91,3 +94,10 @@ Simply download to use the application.
   <li>Step2: Click on FxRates Button </li>
   <li>Step3: Select any Currency and click on fetch button </li>
 </ul>
+
+## Contact
+Vaibhav Paliwal - [@Vaibhav6200](https://github.com/Vaibhav6200) <br>
+Kava Lakshit    - [@Lakshit21](https://github.com/Lakshit21) <br>
+Vedant Modi     - [@vedant8689](https://github.com/vedant8689) <br>
+Vedant Patel    - [@Kiraschild](https://github.com/Kiraschild) <br>
+Nilanjan Vyan   - [@Nilanjan223](https://github.com/Nilanjan223) <br>
