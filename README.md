@@ -12,7 +12,7 @@
 
   <h1 align="center">Currency Exchange Visulizer</h1>
 
-()[https://github.com/Vaibhav6200/NU-Team-6/blob/master/images/logo.ico]
+![Project Logo](https://raw.githubusercontent.com/Vaibhav6200/NU-Team-6/master/images/logo.ico?token=GHSAT0AAAAAABXFXCJFUHFIEWNMQYSXS72UYZSY5SQ)
 
 <!-- TABLE OF CONTENTS -->
 <details open="open">
