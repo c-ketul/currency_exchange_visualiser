@@ -10,7 +10,7 @@
 <br />
 <p align="center">
 
-  <h3 align="center">Currency Exchange Visulizer</h3>
+  <h1 align="center">Currency Exchange Visulizer</h1>
 
 
 
@@ -27,7 +27,9 @@
     <li>
       <a href="#getting-started">Getting Started</a>
     </li>
-    <li><a href="#usage">Usage</a></li>
+    <li><a href="#Usage-of-currency-exchange-engine">Usage of currency Exchange Engine</a></li>
+    <li><a href="#Usage-of-currency-exchange-engine">Usage of currency converter</a></li>
+    <li><a href="#Usage-of-currency-exchange-engine">Usage of FxRate Calculator</a></li>
   </ol>
 </details>
 
@@ -43,9 +45,9 @@ The dashboard also displays the date on which the rate was at its peak (highest)
 the date on which it was at its lowest.
 
 ### Some ScreenShots
-![Product Name Screen Shot][product-screenshot1]
-
-![Product Name Screen Shot][product-screenshot2]
+![](images/img1.png)
+![](images/img2.png)
+![](images/img3.png)
 
 
 ### Built With
@@ -64,8 +66,28 @@ Simply download to use the application.
 
 
 <!-- USAGE EXAMPLES -->
-## Usage
+## Usage of currency exchange engine
+  <ul>
+    <li>Step1: Open index.html in any browser</li>
+    <li>Step2: Select 2 Currencies for visualization </li>
+  <li>Step3: Click on Search Button (By Default weekly chart will be displayed) </li>
+  <li>Step4: To Visualize monthly, quaterly and yearly charts click on repective buttons. </li>
+</ul>
 
-Open index.html in any browser, and search for any company using Symbol in the given input location. After we can also change the chart to show continous, weekly or monthly data and also switch the chart between OHLC or candlestick.
+
+## Usage of currency converter
+<ul>
+  <li>Step1: Open index.html in any browser </li>
+  <li>Step2: Click on Live Currency calculator Button </li>
+  <li>Step3: Select "FROM" and "TO" currencies from dropdown </li>
+  <li>Step4: Now Enter The Amount to convert. </li>
+  <li>Step5: Click on convert button. </li>
+</ul>
 
 
+## Usage of fxRate Calculator
+<ul>
+  <li>Step1: Open index.html in any browser </li>
+  <li>Step2: Click on FxRates Button </li>
+  <li>Step3: Select any Currency and click on fetch button </li>
+</ul>
