@@ -12,7 +12,7 @@
 
   <h1 align="center">Currency Exchange Visulizer</h1>
 
-!()[images/logo.ico]
+!()[https://github.com/Vaibhav6200/NU-Team-6/blob/master/images/logo.ico]
 
 <!-- TABLE OF CONTENTS -->
 <details open="open">
@@ -93,8 +93,8 @@ Simply download to use the application.
 </ul>
 
 ## Contact
-Vaibhav Paliwal - [@Vaibhav6200](https://github.com/Vaibhav6200)
-Kava Lakshit    - [@Lakshit21](https://github.com/Lakshit21)
-Vedant Modi     - [@vedant8689](https://github.com/vedant8689)
-Vedant Patel    - [@Kiraschild](https://github.com/Kiraschild)
-Nilanjan Vyan   - [@Nilanjan223](https://github.com/Nilanjan223)
+Vaibhav Paliwal - [@Vaibhav6200](https://github.com/Vaibhav6200) <br>
+Kava Lakshit    - [@Lakshit21](https://github.com/Lakshit21) <br>
+Vedant Modi     - [@vedant8689](https://github.com/vedant8689) <br>
+Vedant Patel    - [@Kiraschild](https://github.com/Kiraschild) <br>
+Nilanjan Vyan   - [@Nilanjan223](https://github.com/Nilanjan223) <br>
