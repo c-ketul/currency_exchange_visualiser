@@ -12,7 +12,7 @@
 
   <h1 align="center">Currency Exchange Visulizer</h1>
 
-
+!()[images/logo.ico]
 
 <!-- TABLE OF CONTENTS -->
 <details open="open">
@@ -91,3 +91,10 @@ Simply download to use the application.
   <li>Step2: Click on FxRates Button </li>
   <li>Step3: Select any Currency and click on fetch button </li>
 </ul>
+
+## Contact
+Vaibhav Paliwal - [@Vaibhav6200](https://github.com/Vaibhav6200)
+Kava Lakshit    - [@Lakshit21](https://github.com/Lakshit21)
+Vedant Modi     - [@vedant8689](https://github.com/vedant8689)
+Vedant Patel    - [@Kiraschild](https://github.com/Kiraschild)
+Nilanjan Vyan   - [@Nilanjan223](https://github.com/Nilanjan223)
