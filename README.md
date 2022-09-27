@@ -11,8 +11,8 @@
 <p align="center">
 
   <h1 align="center">Currency Exchange Visulizer</h1>
-  <a href="">
-  <img src="https://raw.githubusercontent.com/Vaibhav6200/NU-Team-6/master/images/logo.ico?token=GHSAT0AAAAAABXFXCJFUHFIEWNMQYSXS72UYZSY5SQ" alt="Logo" width="160" height="80">
+  <a href="" align="center">
+  <img src="https://raw.githubusercontent.com/Vaibhav6200/NU-Team-6/master/images/logo.ico?token=GHSAT0AAAAAABXFXCJFUHFIEWNMQYSXS72UYZSY5SQ" alt="Logo" width="80" height="80">
   </a>
 
 <!-- ![Project Logo](https://raw.githubusercontent.com/Vaibhav6200/NU-Team-6/master/images/logo.ico?token=GHSAT0AAAAAABXFXCJFUHFIEWNMQYSXS72UYZSY5SQ) -->
