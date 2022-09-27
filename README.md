@@ -1,6 +1,6 @@
 
 <!--
-*** Thanks for checking out the Best-README-Template. If you have a suggestion
+*** If you have a suggestion
 *** that would make this better, please fork the repo and create a pull request
 *** or simply open an issue with the tag "enhancement".
 *** Thanks again! Now go create something AMAZING! :D
@@ -39,9 +39,11 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-
-Dashboard based on which User would be able to analyze the sentiment of the specific
-stock  through "OHLC" (Open/High/Low/Close) time series or Candlestick chart based on the 'Stock List' dataset.
+Dashboard which will allow users to analyze the exchange rates between two currencies
+over a period of time.
+Users have the option to select weekly, monthly, quarterly, and yearly charts.
+The dashboard also displays the date on which the rate was at its peak (highest) and
+the date on which it was at its lowest.
 
 ### Some ScreenShots
 ![Product Name Screen Shot][product-screenshot1]
