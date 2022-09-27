@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="container mt-5">
+        <h2 class="mb-4">FX Rates Calculator</h2>
+        <div class="row mb-5">
+            <div class="col-md-10">
+                <input type="text" class="form-control" placeholder="eg I.N.R" id="fxCountry"/>
+            </div>
+            <div class="col-md-1">
+                <button class="btn btn-outline-secondary" value="fetch" onclick="getResults()">Fetch</button>
+            </div>
+            <div class="col-md-1">
+                <a class="btn btn-outline-secondary" href="index.html">Home</a>
+            </div>
+        </div>
+        <table class="table table-hover">
+            <tr>
+                <th>Abbrevations</th>
+                <th>Description</th>
+                <th>Current Rates</th>
+                <th>FX Rate</th>
+            </tr>
+        </table>
+        <div id="liveRates"></div>
+    </div>
+
+    <script>
+        const api = "https://api.exchangerate-api.com/v4/latest/USD";
+        let fxCountry;
+
+
+        function getResults() {
+            fetch(`${api}`).then(currency => {
+                    return currency.json();
+                }).then(displayResults);
+        }
+
+
+        function displayResults(currency) {
+            fxCountry=document.getElementById("fxCountry").value;
+            console.log(fxCountry);
+            let fxRate=1/(currency.rates[fxCountry]);
+            console.log(fxRate);
+            var list1 = ["DZD","AUD","BHD","VEF","BWP","BRL","BND","CAD","CLP","CNY","COP","CZK","DKK","EUR","HUF","ISK","INR","IDR","IRR","ILS","JPY","KZT","KRW","KWD","LYD","MYR","MUR","MXN","NPR","NZD","NOK","OMR","PKR","PEN","PHP","PLN","QAR","RUB","SAR","SGD","ZAR","LKR","SEK","CHF","THB","TTD","TND","AED","GBP","USD","UYU"];
+            var list2 = ["Date Algerian dinar","Australian dollar","Bahrain dinar","Bolivar Fuerte","Botswana pula","Brazilian real","Brunei dollar","Canadian dollar","Chilean peso","Chinese yuan","Colombian peso","Czech koruna","Danish krone","Euro","Hungarian forint","Icelandic krona","Indian rupee","Indonesian rupiah","Iranian rial","Israeli New Shekel","Japanese yen","Kazakhstani tenge","Korean won","Kuwaiti dinar","Libyan dinar","Malaysian ringgit","Mauritian rupee","Mexican peso","Nepalese rupee","New Zealand dollar","Norwegian krone","Omani rial","Pakistani rupee","Peruvian sol","Philippine peso","Polish zloty","Qatari riyal","Russian ruble","Saudi Arabian riyal","Singapore dollar","South African rand","Sri Lankan rupee","Swedish krona","Swiss franc","Thai baht","Trinidadian dollar","Tunisian dinar","U.A.E. dirham","U.K. pound","U.S. Dollar","Uruguayan peso"];
+            let result="<table class=table table-hover>";
+            for(let i = 0; i< list1.length; ++i)
+            {
+                let temp=currency.rates[list1[i]]*fxRate;
+                let final=temp.toFixed(2);
+                console.log(temp);
+                result += "<tr>"+
+                    "<td>"+list1[i]+"</td>"+
+                    "<td>"+list2[i]+"</td>"+
+                    "<td>"+currency.rates[list1[i]]+"</td>"+
+                    "<td>"+final+"</td>"+
+                    "</tr>";
+            }
+            result+="</table>";
+            document.getElementById('liveRates').innerHTML = result;
+        }
+    </script>
+</body>
+</html>
