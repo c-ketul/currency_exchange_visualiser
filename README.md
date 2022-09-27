@@ -7,9 +7,6 @@
 -->
 
 
-![Technologies Used][t-s]
-
-
 <br />
 <p align="center">
 
