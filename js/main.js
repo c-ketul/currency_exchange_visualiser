@@ -5,6 +5,11 @@ let smallData = [];
 let smallDataToUse =[]
 
 
+var minValue;
+var maxValue;
+var maxDate;
+var minDate;
+
 document.querySelector("#searchBtn").addEventListener("click", () => {
   smallData = []
   baseQuery = document.querySelector("#baseDropdown").value;
@@ -14,6 +19,8 @@ document.querySelector("#searchBtn").addEventListener("click", () => {
     let currencyData = data[searchQuery];
     let baseData= data[baseQuery]
     var curSize = Object.keys(currencyData).length;
+    minValue = currencyData[0];
+    maxValue = currencyData[0];
     for(var i=0;i<curSize;i++){
       if(currencyData[i] != null && baseData[i] != null){
         var obj = {
@@ -94,6 +101,14 @@ function getData(){
 
     console.log("small data is : ",smallData.length);
     for(var i=0;i<smallData.length;i+=period){
+      if(maxValue<smallData[i].y){
+          maxValue=smallData[i].y;
+          maxDate=smallData[i].x;
+      }
+      else if(minValue>smallData[i].y){
+          minValue=smallData[i].y;
+          minDate=smallData[i].x;
+      }
       const obj = {
         x : smallData[i].x,
         y : smallData[i].y
@@ -124,6 +139,13 @@ function lineChart() {
     }]
   });
   chart.render();
+
+
+
+  document.querySelector("#minValue").innerHTML = '<span>Min Value: ' + minValue + '</span>';
+  document.querySelector("#minDate").innerHTML = '<span>Date: ' + JSON.stringify(minDate).substring(1, 11) + '</span>';
+  document.querySelector("#maxValue").innerHTML = '<span>Max Value: ' + maxValue + '</span>';
+  document.querySelector("#maxDate").innerHTML = '<span>Date: ' + JSON.stringify(maxDate).substring(1, 11) + '</span>';
 };
 
 function yearLineChart() {

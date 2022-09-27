@@ -143,7 +143,6 @@
                 <button class="btn btn-outline-secondary mx-3" value="yearly">Yearly</button>
                 <a class="btn btn-outline-secondary mx-3" href="liveCurrencyCalculator.html">Live Currency calculator</a>
                 <a class="btn btn-outline-secondary mx-3" href="fxRates.html">Fx Rates</a>
-
             </div>
         </div>
 
@@ -160,14 +159,21 @@
             <button class="btn btn-outline-secondary btn-year mx-3" value="21">2021</button>
             <button class="btn btn-outline-secondary btn-year mx-3" value="22">2022</button>
         </div>
+        <div>
+            <div>
+                <span id="minValue" style="margin-right: 20px;"></span>
+                <span id="minDate"></span>
+            </div>
+            <div>
+                <span style="margin-right: 20px;" id="maxValue"></span>
+                <span id="maxDate"></span>
+            </div>
+        </div>
     </div>
 
     <div id="chartContainer"></div>
     <div id="error"></div>
 
-
-
-    <div id="YearChartContainer"></div>
 
     <script src="js/main.js"></script>
     <script type="text/javascript" src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
