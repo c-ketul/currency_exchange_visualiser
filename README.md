@@ -97,7 +97,4 @@ Simply download to use the application.
 
 ## Contact
 Vaibhav Paliwal - [@Vaibhav6200](https://github.com/Vaibhav6200) <br>
-Kava Lakshit    - [@Lakshit21](https://github.com/Lakshit21) <br>
-Vedant Modi     - [@vedant8689](https://github.com/vedant8689) <br>
-Vedant Patel    - [@Kiraschild](https://github.com/Kiraschild) <br>
-Nilanjan Vyas   - [@Nilanjan223](https://github.com/Nilanjan223) <br>
+Ketul Madhwani    - [@c-ketul](https://github.com/c-ketul) <br>
